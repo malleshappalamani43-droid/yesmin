@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: unzip -q "*.zip"
+      - run: unzip -q "*.zip" && cp GeminiClient.kt YESMIN/app/src/main/java/com/yesmin/app/ai/GeminiClient.kt
       - uses: actions/setup-java@v4
         with:
           distribution: temurin
